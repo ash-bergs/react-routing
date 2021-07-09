@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home container">
       <p className="content">
         You might already know how to use React Router to set up routing between
         components. But do you know what's happening under the hood? React

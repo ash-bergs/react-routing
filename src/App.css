@@ -1,8 +1,8 @@
 /* Basic layout: Everything is in a centered parent element, with display: flex affixed. Centering applied with align-items */
 .App {
-  background-color: gray;
+  background-color: #2a9d8f;
   width: 50%;
-  height: 80vh;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -11,8 +11,28 @@
   font-size: 1.2em;
 }
 
+.headline {
+  color: white;
+}
+
 .container {
   width: 80%;
+  padding: 0 2%;
+  margin: 1%;
+  box-shadow: 5px 5px 1px #f4a261;
+}
+
+.about {
+  background-color: #e76f51;
+}
+
+.contact {
+  color: white;
+  background-color: #264653;
+}
+
+.home {
+  background-color: #e9c46a;
 }
 
 .center {
