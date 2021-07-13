@@ -10,6 +10,7 @@ const About = () => {
         <li className="content list item">The browser environment</li>
         <li className="content list item">The Window object</li>
         <li className="content list item">The Browser Object Model (BOM)</li>
+        <li className="content list item">React's Children prop</li>
       </ul>
     </div>
   );
