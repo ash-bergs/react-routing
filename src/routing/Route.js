@@ -1,11 +1,14 @@
 //import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const Route = ({ children, path }) => {
+  // isolate the user's current path
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
   useEffect(() => {
     // change handler
     const onPathChange = () => {
-      console.log('Path has been changed!');
+      setCurrentPath(window.location.pathname);
     };
     // turn on event listener and its handler ⬆
     window.addEventListener('popstate', onPathChange);
@@ -15,7 +18,7 @@ const Route = ({ children, path }) => {
     };
   }, []);
 
-  return window.location.pathname === path ? children : null;
+  return currentPath === path ? children : null;
 };
 
 export default Route;
