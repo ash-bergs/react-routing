@@ -1,4 +1,3 @@
-//import React from 'react';
 import { useEffect, useState } from 'react';
 
 const Route = ({ children, path }) => {
@@ -8,6 +7,7 @@ const Route = ({ children, path }) => {
   useEffect(() => {
     // change handler
     const onPathChange = () => {
+      // update the currentPath when it changes *after* render
       setCurrentPath(window.location.pathname);
     };
     // turn on event listener and its handler ⬆
