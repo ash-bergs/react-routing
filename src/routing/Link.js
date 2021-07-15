@@ -5,6 +5,9 @@ const Link = ({ href, className = 'link', children }) => {
   const onClick = (e) => {
     e.preventDefault();
     window.history.pushState({}, '', href);
+    // explicitly create and emit popstate event
+    const navEvent = new PopStateEvent('popstate');
+    window.dispatchEvent(navEvent);
   };
 
   return (
