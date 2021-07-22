@@ -4,11 +4,12 @@ const Home = () => {
   return (
     <div className="home container">
       <p className="content">
-        You've probably used React Router, and know how to set up routing in an
-        app quickly using it. But do you know what's happening under the hood?
-        React Router regularly introduces breaking changes and headaches for
-        devs around the globe. The good new is that a little bit of exploration
-        can help us mend those breaks more quickly and knowledgeably.
+        If you've used React, you've probably used React Router. You then also
+        know how quickly and easily it can set up routing between components and
+        views. But do you know what's going on under the hood? How does routing
+        really work in React? Where does the functionality and subtle, expected
+        behavior come from? Let's explore that by building some routing and
+        navigation of our own!
       </p>
     </div>
   );
